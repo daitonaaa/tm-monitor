@@ -1,0 +1,76 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
+}
+
+.day {
+  padding: 10px 5px;
+  border-bottom: 1px solid #e4e2df;
+  margin-bottom: 10px;
+}
+
+.day-mark {
+  display: inline-grid;
+  background: orange;
+  color: #fff;
+  padding: 5px;
+}
+
+.task:nth-child(2n) {
+  background: #eef1f3;
+}
+
+.task:nth-child(2n) .task__time {
+  background: orange;
+  color: #fff;
+}
+
+.task {
+  margin-bottom: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.task__text {
+  padding-right: 100px;
+}
+
+.task--checked {
+  opacity: 0.4;
+  transform: scale(0.8);
+}
+
+.task__time {
+  position: absolute;
+  padding: 0 5px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+}
+
+.day__total {
+  display: flex;
+  min-height: 50px;
+  position: relative;
+}
+
+.day__total span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 50px;
+  padding: 0 5px;
+  background: #6b9df1;
+}
